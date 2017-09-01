@@ -1,3 +1,10 @@
+/**
+ * @file 项目入口
+ *
+ * @author liubin29@baidu.com
+ * 2017年8月31日
+ */
+
 {{#if_eq build "standalone"}}
 // The Vue build version to load with the `import` command
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
@@ -12,15 +19,15 @@ Vue.config.productionTip = false{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 
 /* eslint-disable no-new */
 new Vue({
-  el: '#app',
-  {{#router}}
-  router,
-  {{/router}}
-  {{#if_eq build "runtime"}}
-  render: h => h(App){{#if_eq lintConfig "airbnb"}},{{/if_eq}}
-  {{/if_eq}}
-  {{#if_eq build "standalone"}}
-  template: '<App/>',
-  components: { App }{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
-  {{/if_eq}}
+    el: '#app',
+    {{#router}}
+    router,
+    {{/router}}
+    {{#if_eq build "runtime"}}
+    render: h => h(App){{#if_eq lintConfig "airbnb"}},{{/if_eq}}
+    {{/if_eq}}
+    {{#if_eq build "standalone"}}
+    template: '<App/>',
+    components: { App }{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
+    {{/if_eq}}
 }){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
