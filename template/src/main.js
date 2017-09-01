@@ -14,8 +14,12 @@ import App from './App';
 {{#router}}
 import router from './router';
 {{/router}}
+import axios from 'axios';
 
 Vue.config.productionTip = false;
+
+// 将axios挂载到prototype上，在组件中可以直接使用this.$ajax访问
+Vue.prototype.$ajax = axios;
 
 new Vue({
     el: '#app',
@@ -27,6 +31,8 @@ new Vue({
     {{/if_eq}}
     {{#if_eq build "standalone"}}
     template: '<App/>',
-    components: { App }
+    components: {
+        App
+    }
     {{/if_eq}}
 });
