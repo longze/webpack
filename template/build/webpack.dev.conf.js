@@ -1,7 +1,7 @@
 /**
  * @file webpack 开发版，基于 vue-cli 通用模板修改
  *
- * @author liubin29@baidu.com
+ * @author liubin29
  * 2017年8月31日
  */
 
@@ -25,7 +25,7 @@ module.exports = merge(baseWebpackConfig, {
         })
     },
     // cheap-module-eval-source-map is faster for development
-    devtool: '#cheap-module-eval-source-map',
+    // devtool: '#cheap-module-eval-source-map',
     plugins: [
         new webpack.DefinePlugin({
             'process.env': config.dev.env

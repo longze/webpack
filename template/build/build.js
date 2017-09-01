@@ -1,7 +1,7 @@
 /**
  * @file 构建发布版本
  *
- * @author liubin29@baidu.com
+ * @author liubin29
  * 2017年8月31日
  */
 

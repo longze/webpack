@@ -1,7 +1,7 @@
 /**
  * @file 根组件
  *
- * @author liubin29@baidu.com
+ * @author liubin29
  * 2017年8月31日
  */
 
@@ -18,18 +18,18 @@
 
 <script>
 {{#unless router}}
-import Hello from './components/Hello'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+import Hello from './components/Hello';
 
 {{/unless}}
 export default {
-    name: 'app'{{#router}}{{#if_eq lintConfig "airbnb"}},{{/if_eq}}{{else}},
+    name: 'app'{{#unless router}},
     components: {
-        Hello{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
-    }{{#if_eq lintConfig "airbnb"}},{{/if_eq}}{{/router}}
-}{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+        Hello
+    }{{/unless}}
+};
 </script>
 
-<style lang="less">
+<style>
 #app {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;

@@ -1,7 +1,7 @@
 /**
  * @file 检测 Node 版本号
  *
- * @author liubin29@baidu.com
+ * @author liubin29
  * 2017年8月31日
  */
 

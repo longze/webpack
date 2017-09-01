@@ -1,7 +1,7 @@
 /**
  * @file webpack 测试环境
  *
- * @author liubin29@baidu.com
+ * @author liubin29
  * 2017年8月31日
  */
 

@@ -1,7 +1,7 @@
 /**
  * @file Hello 组件
  *
- * @author liubin29@baidu.com
+ * @author liubin29
  * 2017年8月31日
  */
 
@@ -30,16 +30,16 @@
 <script>
 export default {
     name: 'hello',
-    data{{#unless_eq lintConfig "airbnb"}} {{/unless_eq}}() {
+    data() {
         return {
-            msg: 'Welcome to Your Vue.js App'{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
-        }{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
-    }{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
-}{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+            msg: 'Welcome to Your Vue.js App'
+        };
+    }
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style lang="less" scoped>
+<style scoped>
 h1, h2 {
     font-weight: normal;
 }

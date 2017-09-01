@@ -1,7 +1,7 @@
 /**
  * @file 开发环境热更新
  *
- * @author liubin29@baidu.com
+ * @author liubin29
  * 2017年8月31日
  */
 

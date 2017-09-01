@@ -1,7 +1,7 @@
 /**
  * @file webpack 基础配置，基于 vue-cli 通用模板修改
  *
- * @author liubin29@baidu.com
+ * @author liubin29
  * 2017年8月31日
  */
 
