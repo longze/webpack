@@ -21,10 +21,10 @@ function parseParam(url) {
         return {};
     }
 
-    var params = url.split('#')[0].split('&');
-    var query = {};
-    for (var i = 0; i < params.length; i++) {
-        var item = params[i].split('=');
+    let params = url.split('#')[0].split('&');
+    let query = {};
+    for (let i = 0; i < params.length; i++) {
+        let item = params[i].split('=');
         if (item.length === 2) {
             query[item[0]] = decodeURIComponent(item[1]);
         }

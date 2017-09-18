@@ -26,7 +26,7 @@ export default {
     },
     methods: {
         init() {
-            this.$ajax.get('/ara/list').then(res => {
+            this.$http.get('/ara/list').then(res => {
                 this.content = res.data.data;
             });
         }

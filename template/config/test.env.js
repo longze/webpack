@@ -5,8 +5,8 @@
  * 2017年8月31日
  */
 
-var merge = require('webpack-merge');
-var devEnv = require('./dev.env');
+let merge = require('webpack-merge');
+let devEnv = require('./dev.env');
 
 module.exports = merge(devEnv, {
     NODE_ENV: '"testing"'

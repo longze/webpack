@@ -19,7 +19,7 @@ import axios from 'axios';
 Vue.config.productionTip = false;
 
 // 将axios挂载到prototype上，在组件中可以直接使用this.$ajax访问
-Vue.prototype.$ajax = axios;
+Vue.prototype.$http = axios;
 
 new Vue({
     el: '#app',

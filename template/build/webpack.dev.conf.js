@@ -5,13 +5,13 @@
  * 2017年8月31日
  */
 
-var utils = require('./utils');
-var webpack = require('webpack');
-var config = require('../config');
-var merge = require('webpack-merge');
-var baseWebpackConfig = require('./webpack.base.conf');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
-var FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin');
+let utils = require('./utils');
+let webpack = require('webpack');
+let config = require('../config');
+let merge = require('webpack-merge');
+let baseWebpackConfig = require('./webpack.base.conf');
+let HtmlWebpackPlugin = require('html-webpack-plugin');
+let FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin');
 
 // add hot-reload related code to entry chunks
 Object.keys(baseWebpackConfig.entry).forEach(function (name) {
