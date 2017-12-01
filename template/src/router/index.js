@@ -1,5 +1,5 @@
 /**
- * @file 测试环境变量
+ * @file 路由配置
  *
  * @author liubin29
  * 2017年8月31日
@@ -14,6 +14,8 @@ export default new Router({
     routes: [{
         path: '/',
         name: 'Hello',
-        component: () => System.import('@/components/Hello')
+        component() {
+            return System.import('@/components/Hello');
+        }
     }]
 });

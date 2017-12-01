@@ -18,6 +18,15 @@ import axios from 'axios';
 
 Vue.config.productionTip = false;
 
+// 添加响应拦截器
+axios.interceptors.response.use(function (res) {
+    // 对响应数据做些事
+    return res.data;
+}, function (error) {
+    // 请求错误时做些事
+    return Promise.reject(error);
+});
+
 // 将axios挂载到prototype上，在组件中可以直接使用this.$ajax访问
 Vue.prototype.$http = axios;
 
@@ -27,7 +36,9 @@ new Vue({
     router,
     {{/router}}
     {{#if_eq build "runtime"}}
-    render: h => h(App),
+    render(h) {
+        return h(App);
+    }
     {{/if_eq}}
     {{#if_eq build "standalone"}}
     template: '<App/>',
